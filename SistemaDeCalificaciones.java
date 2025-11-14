@@ -7,7 +7,7 @@ public class SistemaDeCalificaciones {
         // Declaración de variables
         int num_Estudiantes = 5;
         int num_Evaluaciones = 4;
-        double NOTA_APROBACION = 3.0;
+        double Nota_aprueba = 3.0;
         
         String[] nombres = new String[num_Estudiantes];
         double[][] notas = new double[num_Estudiantes][num_Evaluaciones];
@@ -93,7 +93,7 @@ public class SistemaDeCalificaciones {
             }
             System.out.printf("| %.2f     ", promediosEstudiantes[i]);
             
-            String estado = promediosEstudiantes[i] >= NOTA_APROBACION ? "Aprobado" : "Reprobado";
+            String estado = promediosEstudiantes[i] >= Nota_aprueba ? "Aprobado" : "Reprobado";
             System.out.printf("| %-10s |\n", estado);
         }
         System.out.println("------");
